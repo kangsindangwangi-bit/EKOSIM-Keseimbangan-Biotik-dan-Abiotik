@@ -1,0 +1,7 @@
+{
+  "name": "EKOSIM: Keseimbangan Biotik & Abiotik",
+  "description": "Game edukasi interaktif IPAS Kelas 6 tentang hubungan dua arah biotik dan abiotik, interaksi antarmakhluk hidup, rantai makanan, serta aliran energi dan daur materi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
