@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
 import { soundEngine } from '../utils/audio';
+import { IMAGES } from '../assets/images';
 import { Zap, RefreshCw, CheckCircle2, ArrowRight, Flame, HelpCircle } from 'lucide-react';
 
 interface Mission4Props {
@@ -171,7 +172,7 @@ export const Mission4EnergyAndMatter: React.FC<Mission4Props> = ({ onComplete, o
         <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-950 flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 h-64 md:h-80 relative overflow-hidden">
             <img
-              src="/src/assets/images/nutrient_energy_cycle_1792398962535.jpg"
+              src={IMAGES.nutrientEnergyCycle}
               alt="Daur Materi dan Aliran Energi"
               className="w-full h-full object-cover opacity-90 hover:scale-105 transition-transform duration-700"
               referrerPolicy="no-referrer"

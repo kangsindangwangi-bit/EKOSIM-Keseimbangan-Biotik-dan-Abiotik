@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import { Sun, CloudRain, TreePine, Droplets, Sparkles, CheckCircle2, ArrowRight, Info, AlertTriangle } from 'lucide-react';
 import { soundEngine } from '../utils/audio';
+import { IMAGES } from '../assets/images';
 
 interface Mission1Props {
   onComplete: () => void;
@@ -155,7 +156,7 @@ export const Mission1TwoWay: React.FC<Mission1Props> = ({ onComplete, onNextMiss
           <div className="relative h-80 sm:h-96 w-full overflow-hidden rounded-xl flex flex-col justify-between p-4 shadow-inner">
             {/* Real Habitat River Bank Image Layer */}
             <img
-              src="/src/assets/images/env_river_bank_1792401952220.jpg"
+              src={IMAGES.envRiverBank}
               alt="Habitat Bantaran Sungai"
               className="absolute inset-0 w-full h-full object-cover opacity-45 brightness-90 scale-105 pointer-events-none"
               referrerPolicy="no-referrer"

@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import { ScreenState } from '../types';
+import { IMAGES } from '../assets/images';
 
 export type BiomeType = 'paddy' | 'forest' | 'river' | 'pond';
 
@@ -19,7 +20,7 @@ export const BIOMES: Record<BiomeType, BiomeInfo> = {
     id: 'paddy',
     name: 'Sawah Terasering',
     icon: '🌾',
-    image: '/src/assets/images/ecosystem_hero_landscape_1792398961208.jpg',
+    image: IMAGES.heroLandscape,
     accentColor: '#10B981',
     dominantAbiotic: 'Lumpur basah, limpahan sinar surya, saluran irigasi buatan',
     keyBiotik: 'Padi, belalang, katak sawah, tikus, ular, burung pipit',
@@ -29,7 +30,7 @@ export const BIOMES: Record<BiomeType, BiomeInfo> = {
     id: 'forest',
     name: 'Hutan Hujan Tropis',
     icon: '🌲',
-    image: '/src/assets/images/env_tropical_forest_1792401951707.jpg',
+    image: IMAGES.envTropicalForest,
     accentColor: '#059669',
     dominantAbiotic: 'Kelembapan tinggi, naungan tajuk kanopi, tanah kaya humus gelap',
     keyBiotik: 'Pohon raksasa, lumut, epifit, serangga, jamur pengurai, cacing',
@@ -39,7 +40,7 @@ export const BIOMES: Record<BiomeType, BiomeInfo> = {
     id: 'river',
     name: 'Bantaran & Aliran Sungai',
     icon: '🌊',
-    image: '/src/assets/images/env_river_bank_1792401952220.jpg',
+    image: IMAGES.envRiverBank,
     accentColor: '#0284C7',
     dominantAbiotic: 'Arus air beroksigen, kerikil halus, batuan sempadan, mineral terlarut',
     keyBiotik: 'Vegetasi tepi sungai, akar penahan tebing, ikan arus deras, burung pemancing',
@@ -49,7 +50,7 @@ export const BIOMES: Record<BiomeType, BiomeInfo> = {
     id: 'pond',
     name: 'Kolam Air Tawar',
     icon: '🪷',
-    image: '/src/assets/images/env_freshwater_pond_1792401952257.jpg',
+    image: IMAGES.envFreshwaterPond,
     accentColor: '#06B6D4',
     dominantAbiotic: 'Oksigen terlarut, air tenang tembus cahaya, sedimen lumpur dasar',
     keyBiotik: 'Teratai, eceng gondok, ganggang, ikan air tawar, berudu, capung',

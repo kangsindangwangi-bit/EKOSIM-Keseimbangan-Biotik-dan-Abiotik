@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, BookOpen, Sun, ArrowRight, ShieldCheck, HeartHandshake, Zap, RefreshCw, ZoomIn } from 'lucide-react';
 import { soundEngine } from '../utils/audio';
+import { IMAGES } from '../assets/images';
 
 interface CodexModalProps {
   isOpen: boolean;
@@ -145,14 +146,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/diagram_plant_photosynthesis_roots_1792404221853.jpg',
+                        IMAGES.plantLightPhotosynthesis,
                         'Tumbuhan – Cahaya',
                         'Tumbuhan menangkap foton cahaya matahari untuk mengolah air dan CO₂ menjadi glukosa serta melepaskan oksigen segar.'
                       )}
                       className="relative w-full h-44 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/diagram_plant_photosynthesis_roots_1792404221853.jpg"
+                        src={IMAGES.plantLightPhotosynthesis}
                         alt="Tumbuhan – Cahaya"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -181,14 +182,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/mat_plant_water_soil_1792404308449.jpg',
+                        IMAGES.plantWaterSoil,
                         'Tumbuhan – Air dan Tanah',
                         'Akar menyerap butiran molekul air dan unsur hara mineral dari pori-pori tanah yang kaya bahan organik.'
                       )}
                       className="relative w-full h-44 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/mat_plant_water_soil_1792404308449.jpg"
+                        src={IMAGES.plantWaterSoil}
                         alt="Tumbuhan – Air dan Tanah"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -217,14 +218,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/mat_fish_water_oxygen_1792404307216.jpg',
+                        IMAGES.animalWaterOxygen,
                         'Hewan – Air dan Oksigen',
                         'Ikan air tawar bernapas dengan insang yang menyerap oksigen terlarut (dissolved oxygen) dalam air jernih.'
                       )}
                       className="relative w-full h-44 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/mat_fish_water_oxygen_1792404307216.jpg"
+                        src={IMAGES.animalWaterOxygen}
                         alt="Hewan – Air dan Oksigen"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -253,14 +254,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/diagram_decomposer_humus_soil_1792404223323.jpg',
+                        IMAGES.decomposerSoilHumus,
                         'Pengurai – Tanah',
                         'Cacing tanah, mikroba tanah, dan jamur membusukkan daun gugur dan bangkai menjadi partikel humus yang sangat subur.'
                       )}
                       className="relative w-full h-44 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/diagram_decomposer_humus_soil_1792404223323.jpg"
+                        src={IMAGES.decomposerSoilHumus}
                         alt="Pengurai – Tanah"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -289,14 +290,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/mat_tree_shade_temp_1792404308790.jpg',
+                        IMAGES.treeSoilTemp,
                         'Tumbuhan – Tanah dan Suhu',
                         'Tajuk rimbun pohon menepis terik matahari, menciptakan iklim mikro sejuk (22°C vs 31°C) dan menjaga kelembapan tanah.'
                       )}
                       className="relative w-full h-44 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/mat_tree_shade_temp_1792404308790.jpg"
+                        src={IMAGES.treeSoilTemp}
                         alt="Tumbuhan – Tanah dan Suhu"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -325,14 +326,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/mat_riverbank_roots_1792404331283.jpg',
+                        IMAGES.riverbankVegetationRoots,
                         'Organisme – Air (Aliran & Erosi)',
                         'Jalinan akar tanaman di tebing sungai menahan struktur tanah dan menyerap arus deras sehingga tidak terjadi longsor erosi.'
                       )}
                       className="relative w-full h-44 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/mat_riverbank_roots_1792404331283.jpg"
+                        src={IMAGES.riverbankVegetationRoots}
                         alt="Organisme – Air (Aliran & Erosi)"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -379,14 +380,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/diagram_symbiosis_predation_frog_1792404223028.jpg',
+                        IMAGES.predationFrog,
                         'Predasi (Pemangsaan)',
                         'Katak sawah menangkap belalang dengan lidah cepatnya; predator mendapatkan mangsa sedangkan populasi hama terkendali.'
                       )}
                       className="relative w-full h-44 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/diagram_symbiosis_predation_frog_1792404223028.jpg"
+                        src={IMAGES.predationFrog}
                         alt="Predasi"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -419,14 +420,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/mat_plant_competition_1792404331309.jpg',
+                        IMAGES.competitionPlants,
                         'Kompetisi (Persaingan)',
                         'Dua tanaman berdekatan bersaing memperebutkan sinar matahari di atas dan air serta nutrisi di bawah tanah.'
                       )}
                       className="relative w-full h-44 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/mat_plant_competition_1792404331309.jpg"
+                        src={IMAGES.competitionPlants}
                         alt="Kompetisi"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -459,14 +460,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/diagram_symbiosis_mutualism_bee_1792404221578.jpg',
+                        IMAGES.mutualismBee,
                         'Mutualisme (Saling Menguntungkan)',
                         'Lebah madu mengambil nektar manis bunga, sambil membawa serbuk sari ke putik bunga lain untuk membantu pembuahan.'
                       )}
                       className="relative w-full h-44 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/diagram_symbiosis_mutualism_bee_1792404221578.jpg"
+                        src={IMAGES.mutualismBee}
                         alt="Mutualisme"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -499,14 +500,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/mat_parasite_host_1792404331573.jpg',
+                        IMAGES.parasiteHost,
                         'Parasitisme (Satu Untung, Satu Dirugikan)',
                         'Kutu parasit mengisap darah hewan inang; dan benalu menancapkan akarnya ke dahan pohon untuk menyerap nutrisi inang.'
                       )}
                       className="relative w-full h-44 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/mat_parasite_host_1792404331573.jpg"
+                        src={IMAGES.parasiteHost}
                         alt="Parasitisme"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -564,14 +565,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
 
                 <div 
                   onClick={() => handleOpenPreview(
-                    '/src/assets/images/mat_rice_food_chain_1792404352775.jpg',
+                    IMAGES.riceFoodChain,
                     'Rantai Makanan Sawah',
                     'Aliran energi berawal dari Matahari → Padi (Produsen) → Belalang (Konsumen I) → Katak (Konsumen II) → Ular (Konsumen III) → Elang (Konsumen Puncak).'
                   )}
                   className="relative w-full h-56 sm:h-72 rounded-xl overflow-hidden border border-slate-700 bg-slate-950 cursor-pointer group shadow-lg"
                 >
                   <img
-                    src="/src/assets/images/mat_rice_food_chain_1792404352775.jpg"
+                    src={IMAGES.riceFoodChain}
                     alt="Rantai Makanan Sawah"
                     className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
                     loading="lazy"
@@ -612,14 +613,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
 
                 <div 
                   onClick={() => handleOpenPreview(
-                    '/src/assets/images/food_web_panoramic_1792403743526.jpg',
+                    IMAGES.foodWebPanoramic,
                     'Jaring-Jaring Makanan Sawah',
                     'Beberapa rantai makanan yang saling terhubung membentuk jaring-jaring makanan: tikus, burung pipit, belalang, katak, ular, dan elang.'
                   )}
                   className="relative w-full h-56 sm:h-72 rounded-xl overflow-hidden border border-slate-700 bg-slate-950 cursor-pointer group shadow-lg"
                 >
                   <img
-                    src="/src/assets/images/food_web_panoramic_1792403743526.jpg"
+                    src={IMAGES.foodWebPanoramic}
                     alt="Jaring-jaring Makanan Sawah"
                     className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300"
                     loading="lazy"
@@ -683,14 +684,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/mat_energy_pyramid_heat_1792404352632.jpg',
+                        IMAGES.energyPyramidHeat,
                         'Aliran Energi (Satu Arah)',
                         'Energi matahari masuk ke produsen lalu ke konsumen. Pada setiap tingkat trofik, 90% energi dilepaskan sebagai energi panas ke lingkungan.'
                       )}
                       className="relative w-full h-52 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/mat_energy_pyramid_heat_1792404352632.jpg"
+                        src={IMAGES.energyPyramidHeat}
                         alt="Aliran Energi Satu Arah"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
@@ -724,14 +725,14 @@ export const CodexModal: React.FC<CodexModalProps> = ({ isOpen, onClose }) => {
                   <div>
                     <div 
                       onClick={() => handleOpenPreview(
-                        '/src/assets/images/nutrient_energy_cycle_1792398962535.jpg',
+                        IMAGES.nutrientEnergyCycle,
                         'Daur Materi (Berputar Terus-menerus)',
                         'Air, karbon, dan mineral bergerak terus menerus antara lingkungan abiotik dan organisme hidup melalui jasa pengurai tanah.'
                       )}
                       className="relative w-full h-52 mb-3 rounded-lg overflow-hidden border border-slate-700/80 bg-slate-950 cursor-pointer group"
                     >
                       <img
-                        src="/src/assets/images/nutrient_energy_cycle_1792398962535.jpg"
+                        src={IMAGES.nutrientEnergyCycle}
                         alt="Daur Materi Berulang"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"

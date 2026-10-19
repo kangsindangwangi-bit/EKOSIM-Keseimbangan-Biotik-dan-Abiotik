@@ -3,6 +3,7 @@ import confetti from 'canvas-confetti';
 import { SYMBIOSIS_DATA } from '../data/curriculumData';
 import { SymbiosisItem } from '../types';
 import { soundEngine } from '../utils/audio';
+import { IMAGES } from '../assets/images';
 import { ArrowRight, CheckCircle2, AlertCircle, Play, Sparkles, RefreshCw } from 'lucide-react';
 
 interface Mission2Props {
@@ -156,7 +157,7 @@ export const Mission2Interactions: React.FC<Mission2Props> = ({ onComplete, onNe
             <div className="relative h-56 sm:h-64 rounded-xl border border-slate-800 flex items-center justify-around p-4 overflow-hidden shadow-inner">
               {/* Habitat Forest Image Background */}
               <img
-                src="/src/assets/images/env_tropical_forest_1792401951707.jpg"
+                src={IMAGES.envTropicalForest}
                 alt="Habitat Hutan Tropis"
                 className="absolute inset-0 w-full h-full object-cover opacity-50 brightness-75 scale-105 pointer-events-none"
                 referrerPolicy="no-referrer"

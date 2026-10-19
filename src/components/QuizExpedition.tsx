@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { QUIZ_QUESTIONS } from '../data/curriculumData';
 import { QuizQuestion } from '../types';
 import { soundEngine } from '../utils/audio';
+import { IMAGES } from '../assets/images';
 import { HelpCircle, CheckCircle2, XCircle, ArrowRight, Award, RotateCcw } from 'lucide-react';
 import confetti from 'canvas-confetti';
 
@@ -392,7 +393,7 @@ export const QuizExpedition: React.FC<QuizProps> = ({ onCompleteQuiz, onGoHome }
       <div className="relative bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 flex flex-col justify-between shadow-xl flex-1 overflow-hidden">
         {/* Pond Habitat Backdrop */}
         <img
-          src="/src/assets/images/env_freshwater_pond_1792401952257.jpg"
+          src={IMAGES.envFreshwaterPond}
           alt="Habitat Kolam Air Tawar"
           className="absolute inset-0 w-full h-full object-cover opacity-20 brightness-75 scale-105 pointer-events-none"
           referrerPolicy="no-referrer"

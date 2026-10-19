@@ -3,6 +3,7 @@ import confetti from 'canvas-confetti';
 import { FOOD_CHAIN_NODES, FOOD_WEB_EXTENDED_NODES } from '../data/curriculumData';
 import { FoodChainNode } from '../types';
 import { soundEngine } from '../utils/audio';
+import { IMAGES } from '../assets/images';
 import { ArrowRight, CheckCircle2, RotateCcw, Zap, AlertTriangle, ShieldAlert, Sparkles } from 'lucide-react';
 
 interface Mission3Props {
@@ -133,7 +134,7 @@ export const Mission3FoodWeb: React.FC<Mission3Props> = ({ onComplete, onNextMis
       <div className="relative bg-slate-900/90 border border-slate-800 rounded-2xl p-6 shadow-xl flex flex-col gap-4 overflow-hidden">
         {/* Subtle Paddy Habitat Background */}
         <img
-          src="/src/assets/images/ecosystem_hero_landscape_1792398961208.jpg"
+          src={IMAGES.heroLandscape}
           alt="Latar Sawah Rantai Makanan"
           className="absolute inset-0 w-full h-full object-cover opacity-25 brightness-75 scale-105 pointer-events-none"
           referrerPolicy="no-referrer"
@@ -259,7 +260,7 @@ export const Mission3FoodWeb: React.FC<Mission3Props> = ({ onComplete, onNextMis
             {/* Visual illustration of organisms - PANORAMIC 16:9 EDGE-TO-EDGE (NO EMPTY AREA) */}
             <div className="relative rounded-xl overflow-hidden border border-slate-800 mb-4 shadow-lg group">
               <img
-                src="/src/assets/images/food_web_panoramic_1792403743526.jpg"
+                src={IMAGES.foodWebPanoramic}
                 alt="Ilustrasi Lengkap Panoramik Jaring Makanan Sawah"
                 className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"
